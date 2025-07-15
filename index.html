@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yi Cao | PhD in Materials Science</title>
+
+  <!-- 加载 Inter 和 Lora 字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e67e88;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background-color: #e67e88;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #fefefe, #f6f6f6);
+    }
+
+    .hero h1 {
+      font-family: 'Lora', serif;
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 24px;
+    }
+
+    .btn {
+      background: #e67e88;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Yi Cao</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+      <a href="#ml">ML Resources</a>
+      <a href="/cv.pdf" target="_blank">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hello, I'm Yi Cao 👩‍🔬</h1>
+    <p>A 2nd-year Ph.D. student in Materials Science at Johns Hopkins University.<br>
+    I explore the intersection of computational materials and machine learning.</p>
+    <a href="#research" class="btn">Explore My Research</a>
+  </section>
+</body>
+</html>
